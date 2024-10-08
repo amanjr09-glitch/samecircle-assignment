@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className="grid grid-cols-6 p-8 gap-4">
+    <div className="md:grid md:grid-cols-6 p-8 gap-4">
       <div className="col-span-1 hidden md:block">
         <Logo />
       </div>
@@ -56,7 +56,7 @@ function App() {
           />
         </div>
       )}
-      <div className="col-span-6 md:col-span-3">
+      <div className="w-full  md:col-span-3">
         {currentSong && (
           <Player
             currentSong={currentSong}

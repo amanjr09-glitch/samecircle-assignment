@@ -58,7 +58,7 @@ const Player = ({ currentSong, songs, setCurrentSong }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 justify-center mx-[20%] mt-12">
+    <div className="flex flex-col gap-4 md:justify-center md:mx-[20%] mt-12">
       <div className="mb-4">
         <h2 className="text-[32px] text-white font-bold">{currentSong.name}</h2>
         <h3 className="text-white opacity-[60%] text-[16px]">
@@ -68,7 +68,7 @@ const Player = ({ currentSong, songs, setCurrentSong }) => {
       <img
         src={`https://cms.samespace.com/assets/${currentSong.cover}`}
         alt="cover"
-        className="w-[480px] h-[450px] rounded-lg"
+        className="lg:w-[480px] h-[450px] w-full rounded-lg"
       />
       <audio ref={audioRef} src={currentSong.url} />
       <div className="relative w-full h-2 bg-[#FFFFFF20] rounded">
