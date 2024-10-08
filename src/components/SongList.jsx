@@ -44,7 +44,7 @@ const SongList = ({ songs, setCurrentSong, currentSong }) => {
 
   return (
     <div>
-      <div className="flex gap-6 px-3">
+      <div className="flex gap-6 md:px-3 ">
         <button
           className={`text-[24px] font-bold ${
             activeTab === "forYou"
@@ -67,7 +67,7 @@ const SongList = ({ songs, setCurrentSong, currentSong }) => {
         </button>
       </div>
 
-      <div className="relative pb-10 pt-5 px-3">
+      <div className="relative pb-10 pt-5 md:px-3">
         <input
           type="text"
           placeholder="Search Song, Artist"

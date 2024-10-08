@@ -48,7 +48,7 @@ function App() {
         />
       </div>
       {showSongList && (
-        <div className="col-span-6 md:col-span-2 lg:hidden">
+        <div className="col-span-6 md:col-span-2 lg:hidden mt-2">
           <SongList
             songs={songs}
             setCurrentSong={setCurrentSong}
